@@ -53,13 +53,14 @@ def multiplicar_basico(numeros: Iterable[float]) -> float:
         - Utilizar múltiples Return
         - No utilizar ELSE
     """
-
-    lista = []
-    for i in lista(1,n+1):
-        lista = lista + i
-
-    return lista
+      
+    if len(numeros) == 0:
+        return 0
     
+    for num in numeros:
+        numeros *= num
+    
+    return numeros
 
 
 # NO MODIFICAR - INICIO
